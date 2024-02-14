@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trade Day</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/scalping.png" />
+  </head>
+
+  <body>
+    <form id="trade-form">
+      <main class="table" id="customers_table">
+        <section class="table__header">
+          <h1 style="font-weight: 700; color: #fff;">My journal Trade</h1>
+        </section>
+        <section class="table__body">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Pair <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Session <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Entry Time <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Close Time <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Trade Type <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>TP Size <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>SL Size <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Risk Reward <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Amount <span class="icon-arrow">&UpArrow;</span></th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- Existing table rows -->
+                <tr>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="date"
+                        placeholder="Day"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Pair"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Session"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Entry Time"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Close TimeClose Time"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Trade Type"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="TP Size"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="SP Size"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Risk Reward"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-wrapper">
+                      <input
+                        required
+                        class="input-box"
+                        type="text"
+                        placeholder="Amount $"
+                      />
+                      <span class="underline"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="save-btn">Save</button>
+                    <button class="delete-all">delete All</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <p id="error-message"></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
